@@ -27,7 +27,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     public CorsFilter corsFilter() {
         String localOrigin = "http://localhost:4200";
         String remoteFrontOrigin = "http://git-api.s3-website.eu-central-1.amazonaws.com";
-        String remoteOrigin = "hhttps://repository-info.herokuapp.com";
+        String remoteOrigin = "https://repository-info.herokuapp.com";
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration config = new CorsConfiguration();
         config.addAllowedOrigin(localOrigin);
